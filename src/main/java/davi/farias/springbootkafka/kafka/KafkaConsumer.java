@@ -1,5 +1,6 @@
 package davi.farias.springbootkafka.kafka;
 
+import davi.farias.springbootkafka.payload.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -11,7 +12,7 @@ public class KafkaConsumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducer.class);
 
     @KafkaListener(topics = "javaguides", groupId = "myGroup")
-    public void consume(String message){
-        LOGGER.info(String.format("Message receiver -> %s", message));
+    public void consume(User user){
+        LOGGER.info(String.format("Message receiver -> %s", user.toString()));
     }
 }
