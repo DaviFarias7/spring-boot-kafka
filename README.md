@@ -1,3 +1,7 @@
+# SPRING BOOT + APACHE KAFKA
+
+Project that uses Apache Kafka to Exchange Messages Between Producer and Consumer in Spring Boot Applications
+
 ### STEP 1 APACHE KAFKA DOWNLOAD
 https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz
 
@@ -26,3 +30,8 @@ https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz
 ``hello world``
 
 ``topic demo``
+
+# PROJECT RUNNING
+
+Zookeeper and Kafka server runing
+
